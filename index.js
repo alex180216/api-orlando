@@ -14,7 +14,7 @@ app.use(express.json())
 
 app.use("/products", productsRouter)
 
-app.get("/", (request, response) => {
+app.get("/api", (request, response) => {
   response.json({
     greeting: "hello"
   })
